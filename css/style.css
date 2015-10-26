@@ -1,0 +1,569 @@
+
+
+
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in LDN
+*/
+
+/* #effd78 yellow */
+/* #123941 dark green */
+
+/******************************************
+/* SETUPdsfs
+/*******************************************/
+
+/* Box Model Hack */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: white;
+}
+
+.blog-page-body{
+  background-color: #efefee;
+}
+
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #000;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: "Open Sans", sans-serif;
+  background-size: cover;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+.maxwidth {
+  max-width: 1200px;
+  margin: auto;
+  padding: 70px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/******************************************
+/* NAVIGATION
+/*******************************************/
+
+
+.blogheader {
+    background-color: #123941;
+    margin: auto;
+
+}
+
+.blogheader-text {
+  max-width: 1200px;
+  margin: 0  auto;
+  padding: 0px 60px 0px 60px;
+}
+
+.navigation {
+  float: right;
+  margin: 70px 0 0 0;
+  color: white;
+  font-size: 18px;
+  display: inline;
+  list-style-type: none;
+}
+
+.navigation ul li {
+  display: inline;
+  margin-left: 10px;
+  color: #effd78;
+}
+
+
+.linavigation {
+  color: #effd78;
+  margin-left: 20px;
+}
+
+.linavigation:hover {
+  color: white;
+}
+
+.logo {
+  float: left;
+  text-decoration: none;
+  color: white;
+}
+
+.hamburgerIcon {
+	float: right;
+	margin-top: 20px;
+  display: none;
+}
+
+
+.main-nav {
+  display: none;
+}
+
+.linavigation2 {
+  display: none;
+}
+
+/******************************************
+/* article
+/*******************************************/
+
+article {
+  padding-top: 20px;
+  float: left;
+  width: 75%;
+}
+
+.article-image {
+  margin-bottom: 30px;
+  width: 100%;
+  /*margin-bottom: 30px;    I don't understand why would use a background image here? Because there is nothing potentially going over it??
+  width: 100%;
+  background: url(../images/blog_photo1.jpg) no-repeat center top rgb(134,141,157);
+  margin: 0;*/
+}
+
+.articletext2,
+.articletext {
+  font-size: 18px;
+  color: grey;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.articletext::first-letter {
+  font-weight: regular;
+  font-size: 72px;
+  float: left;
+  display: inline-block;
+  margin-top: -25px;
+  margin-right: 15px;
+}
+
+
+
+.readmore:hover {
+  color: #123941;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/******************************************
+/* aside
+/*******************************************/
+
+
+aside {
+  padding-top: 20px;
+  float: right;
+  width: 20%
+}
+
+.categories {
+  list-style-type: none;
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: grey;
+  margin-bottom: 30px;
+}
+
+.categories:hover {
+  list-style-type: none;
+  font-family: "opensans";
+  font-size: 14px;
+  color: #123941;
+  margin-bottom: 30px;
+}
+
+.asidetext {
+  font-size: 14px;
+  color: grey;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+#learnmore-1,
+.learn-more {
+  color: #3b7577;
+  font-size: 14px;
+  font-weight: bolder;
+  padding: 20px 0;
+}
+
+.learn-more {
+  color: #3b7577;
+  font-size: 14px;
+  font-weight: bolder;
+  padding: 20px 0;
+}
+
+#learnmore-1:hover {
+  color: #123941;
+  cursor:pointer;
+}
+
+.learn-more:hover {
+  color: #123941;
+  cursor:pointer;
+}
+
+.ad-unit{
+  margin: 40px 0;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+
+h1 {
+  text-decoration: none;
+  font-weight: 900;
+  color: white;
+  font-size: 50px;
+  font-family: "Open Sans";
+
+}
+
+
+h2 {
+  font-family: "Open Sans";
+  color: white;
+  text-align: center;
+  font-size: 47px;
+  margin: 90px 0px 50px 0px;
+  letter-spacing: 2.5px;
+}
+
+
+h3 {
+  color: #043049;
+  font-size: 42px;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+}
+
+h4 {
+  color: #043049;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 10px 0 10px 0;
+}
+
+.body-text {
+  color: #616061;
+  font-size: 25px;
+  font-family: "Open Sans";
+  font-weight: lighter;
+}
+
+.home-ul {
+ list-style-type: circle;
+ list-style-position: inside;
+ margin-left: 50px;
+ margin-top: 50px;
+}
+
+bodyquote {
+  font-size: 35px;
+  color: white;
+  font-style: italic;
+  font-weight: 100;
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+.quotee{
+  font-weight: 500;
+  font-style: normal;
+  margin: 15px 0 0 0;
+}
+
+.footertext {
+  font-size: 18px;
+  color: white;
+  margin-top: 50px;
+}
+
+.yellowheader {
+  color: #effd78;
+  clear: both;
+}
+
+
+/******************************************
+/* BUTTONS AND TEXT LINKS
+/*******************************************/
+
+.yellow-button {
+  background-color: #effd78;
+  font-size: 28px;
+  font-weight: 700;
+  color: #3b7577;
+  padding: 15px 50px 15px 50px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid #effd78;
+  display: block; /** Had to put this in to make sure button centered? Is this always the case? **/
+}
+
+
+.blue-button {
+  background-color: #3b7577;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  padding: 15px 50px 15px 50px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid #3b7577;
+  max-width: 300px;
+  display: block; /** Had to put this in to make sure button centered? Is this always the case? **/
+  clear: both;
+}
+
+
+.blue-button:hover,
+.yellow-button:hover {
+   transform: scale(1.1);
+}
+
+.readmore {
+  color: #3b7577;
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 20px 0;
+  float: right;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+header {
+  display: block;
+  height: 700px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.white-body{
+  background: white;
+  color: #3b7577;
+  margin: 100px auto;
+  max-width: 1200px;
+  padding-right: 15%;
+  display: block;
+
+}
+
+.background-image {
+    background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+    background-size: cover;
+    margin: 0;
+
+}
+
+.bodybackground {
+  background: url(../images/testimonial_bg.jpg) no-repeat center top rgb(134,141,157);
+  background-size: cover;
+  width: 100%;
+  margin: auto;
+  display: inline-block;
+  padding: 10% 25% 10% 25%;
+  text-align: center;
+}
+
+
+.yellowbackground {
+  width: 100%;
+  height: 150px;
+  background-color: #effd78;
+  padding: 40px;
+  clear: both;
+}
+
+
+footer {
+  width: 100%;
+  height: 340px;
+  background-color: #123941;
+  padding: 40px;
+  text-align: center;
+  clear: both;
+
+}
+
+hr {
+  clear: both;
+  margin-bottom: 30px;
+}
+
+.socialmedia{
+  margin: 20px;
+}
+
+
+/******************************************
+/* responsive
+/*******************************************/
+
+
+
+
+@media only screen and (max-width: 830px) {
+
+  aside {
+    padding-top: 20px;
+    float: none;
+    width: 100%
+  }
+
+  .categories {
+    font-size: 12px;
+  }
+
+  .catresp {
+    float left;
+    width: 50%;
+    display: inline-block;
+  }
+
+  .categories:hover {
+    font-size: 12px;
+  }
+
+  .asidetext {
+    font-size: 12px;
+    width: 50%;
+  }
+
+  #learnmore-1,
+  .learn-more {
+    font-size: 12px;
+  }
+
+  .learn-more {
+    font-size: 12px;
+  }
+
+
+  .ad-unit{
+    margin: 40px 0;
+    float: right;
+    display: inline;
+  }
+
+
+
+
+/******************************************
+/* article
+/*******************************************/
+
+article {
+  padding-top: 3%;
+  float: none;
+  width: 100%;
+}
+
+
+.articletext2,
+.articletext {
+  font-size: 16px;
+}
+
+.articletext::first-letter {
+  font-size: 72px;
+}
+
+
+.maxwidth {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5%;
+}
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 730px) {
+
+  .hamburgerIcon {
+  	float: right;
+  	margin-top: 20px;
+    display: inline-block;
+    margin: -7px;
+  }
+
+.other-nav {
+    display: none;
+  }
+
+
+
+
+  .linavigation2 {
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+    float: none;
+    text-align: center;
+    background-color: #1C4B51;
+    width: 100%;
+    margin-bottom: -16px;
+    border-bottom: 1px solid #337172;
+
+  }
+
+
+  .linavigation2:hover {
+    background-color: #2D6B70;
+  }
+
+}
